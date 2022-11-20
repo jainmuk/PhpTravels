@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 public class SeleTest extends AppTest {
 
-	
+	//This test is to test upload and download on demoQA
 	@BeforeTest
 	public void beforeTest() throws IOException {
 		System.out.println("I am in BeforeTest");		
