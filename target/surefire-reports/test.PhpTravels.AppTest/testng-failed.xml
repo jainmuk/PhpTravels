@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [test.PhpTravels.AppTest]">
+  <test name="Command line test(failed)" preserve-order="true">
+    <classes>
+      <class name="test.PhpTravels.AppTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- test.PhpTravels.AppTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [test.PhpTravels.AppTest] -->

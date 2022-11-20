@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-18T15:21:59Z" name="Command line suite" finished-at="2022-11-18T15:22:19Z" duration-ms="20160">
+    <groups>
+    </groups>
+    <test started-at="2022-11-18T15:21:59Z" name="Command line test" finished-at="2022-11-18T15:22:19Z" duration-ms="20160">
+      <class name="test.PhpTravels.SeleTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.PhpTravels.SeleTest@42e99e4a]" started-at="2022-11-18T20:51:59Z" name="beforeTest" finished-at="2022-11-18T20:51:59Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="testAppTest()[pri:0, instance:test.PhpTravels.SeleTest@42e99e4a]" started-at="2022-11-18T20:52:03Z" name="testAppTest" finished-at="2022-11-18T20:52:04Z" duration-ms="1256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAppTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.SeleTest@42e99e4a]" started-at="2022-11-18T20:52:03Z" name="beforeMethod" finished-at="2022-11-18T20:52:03Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.SeleTest@42e99e4a]" started-at="2022-11-18T20:52:04Z" name="beforeMethod" finished-at="2022-11-18T20:52:04Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testSeleTest()[pri:0, instance:test.PhpTravels.SeleTest@42e99e4a]" started-at="2022-11-18T20:52:04Z" name="testSeleTest" finished-at="2022-11-18T20:52:18Z" duration-ms="13744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSeleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.PhpTravels.SeleTest@42e99e4a]" started-at="2022-11-18T20:52:18Z" name="tearDown" finished-at="2022-11-18T20:52:19Z" duration-ms="1179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.PhpTravels.SeleTest -->
+      <class name="test.PhpTravels.AppTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.PhpTravels.AppTest@5f058f00]" started-at="2022-11-18T20:51:46Z" name="setup" finished-at="2022-11-18T20:51:59Z" duration-ms="13204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.AppTest@5f058f00]" started-at="2022-11-18T20:51:59Z" name="beforeMethod" finished-at="2022-11-18T20:51:59Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testAppTest()[pri:0, instance:test.PhpTravels.AppTest@5f058f00]" started-at="2022-11-18T20:51:59Z" name="testAppTest" finished-at="2022-11-18T20:52:03Z" duration-ms="3961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAppTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.PhpTravels.AppTest@5f058f00]" started-at="2022-11-18T20:52:19Z" name="teardown" finished-at="2022-11-18T20:52:21Z" duration-ms="1669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.PhpTravels.AppTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
