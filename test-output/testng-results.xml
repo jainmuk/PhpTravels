@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="1" failed="1" skipped="0">
+<testng-results total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-23T14:03:38Z" name="Failed suite [Suite]" finished-at="2022-11-23T14:03:50Z" duration-ms="11675">
+  <suite started-at="2022-11-23T14:16:15Z" name="Suite" finished-at="2022-11-23T14:16:32Z" duration-ms="17840">
     <groups>
     </groups>
-    <test started-at="2022-11-23T14:03:38Z" name="Test(failed)" finished-at="2022-11-23T14:03:50Z" duration-ms="11675">
+    <test started-at="2022-11-23T14:16:15Z" name="Test" finished-at="2022-11-23T14:16:32Z" duration-ms="17840">
       <class name="test.PhpTravels.SeleTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.PhpTravels.SeleTest@6a6afff2]" started-at="2022-11-23T19:33:38Z" name="beforeTest" finished-at="2022-11-23T19:33:38Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.PhpTravels.SeleTest@f381794]" started-at="2022-11-23T19:46:08Z" name="setup" finished-at="2022-11-23T19:46:15Z" duration-ms="7064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.PhpTravels.SeleTest@f381794]" started-at="2022-11-23T19:46:15Z" name="beforeTest" finished-at="2022-11-23T19:46:15Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.SeleTest@6a6afff2]" started-at="2022-11-23T19:33:38Z" name="beforeMethod" finished-at="2022-11-23T19:33:38Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.SeleTest@f381794]" started-at="2022-11-23T19:46:18Z" name="beforeMethod" finished-at="2022-11-23T19:46:18Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testSeleTest()[pri:0, instance:test.PhpTravels.SeleTest@6a6afff2]" started-at="2022-11-23T19:33:38Z" name="testSeleTest" finished-at="2022-11-23T19:33:44Z" duration-ms="5969" status="FAIL">
+        <test-method signature="testAppTest()[pri:0, instance:test.PhpTravels.SeleTest@f381794]" started-at="2022-11-23T19:46:18Z" name="testAppTest" finished-at="2022-11-23T19:46:18Z" duration-ms="665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAppTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.SeleTest@f381794]" started-at="2022-11-23T19:46:18Z" name="beforeMethod" finished-at="2022-11-23T19:46:18Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testDemoQA()[pri:0, instance:test.PhpTravels.SeleTest@f381794]" started-at="2022-11-23T19:46:18Z" name="testDemoQA" finished-at="2022-11-23T19:46:29Z" duration-ms="10322" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -26,7 +38,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:489)
 	at org.testng.Assert.assertFalse(Assert.java:58)
 	at org.testng.Assert.assertFalse(Assert.java:68)
-	at test.PhpTravels.SeleTest.testSeleTest(SeleTest.java:33)
+	at test.PhpTravels.SeleTest.testDemoQA(SeleTest.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -56,12 +68,12 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSeleTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.SeleTest@6a6afff2]" started-at="2022-11-23T19:33:44Z" name="beforeMethod" finished-at="2022-11-23T19:33:44Z" duration-ms="1" status="PASS">
+        </test-method> <!-- testDemoQA -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.SeleTest@f381794]" started-at="2022-11-23T19:46:29Z" name="beforeMethod" finished-at="2022-11-23T19:46:29Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testIrctc(java.lang.String)[pri:0, instance:test.PhpTravels.SeleTest@6a6afff2]" started-at="2022-11-23T19:33:44Z" name="testIrctc" finished-at="2022-11-23T19:33:50Z" duration-ms="5599" status="PASS">
+        <test-method signature="testIrctc(java.lang.String)[pri:0, instance:test.PhpTravels.SeleTest@f381794]" started-at="2022-11-23T19:46:29Z" name="testIrctc" finished-at="2022-11-23T19:46:32Z" duration-ms="3702" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,21 +84,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIrctc -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.PhpTravels.SeleTest@6a6afff2]" started-at="2022-11-23T19:33:50Z" name="tearDown" finished-at="2022-11-23T19:33:50Z" duration-ms="78" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.PhpTravels.SeleTest@f381794]" started-at="2022-11-23T19:46:32Z" name="tearDown" finished-at="2022-11-23T19:46:32Z" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.PhpTravels.SeleTest -->
-      <class name="test.PhpTravels.AppTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.PhpTravels.AppTest@4ef37659]" started-at="2022-11-23T19:33:34Z" name="setup" finished-at="2022-11-23T19:33:38Z" duration-ms="3681" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.PhpTravels.AppTest@4ef37659]" started-at="2022-11-23T19:33:50Z" name="teardown" finished-at="2022-11-23T19:33:50Z" duration-ms="448" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.PhpTravels.SeleTest@f381794]" started-at="2022-11-23T19:46:32Z" name="teardown" finished-at="2022-11-23T19:46:33Z" duration-ms="342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
+      </class> <!-- test.PhpTravels.SeleTest -->
+      <class name="test.PhpTravels.AppTest">
+        <test-method signature="testAppTest()[pri:0, instance:test.PhpTravels.AppTest@2892dae4]" started-at="2022-11-23T19:46:15Z" name="testAppTest" finished-at="2022-11-23T19:46:18Z" duration-ms="2987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAppTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.AppTest@2892dae4]" started-at="2022-11-23T19:46:15Z" name="beforeMethod" finished-at="2022-11-23T19:46:15Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
       </class> <!-- test.PhpTravels.AppTest -->
-    </test> <!-- Test(failed) -->
-  </suite> <!-- Failed suite [Suite] -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Failed suite [Suite]]">
+<suite name="Failed suite [Suite]">
   <parameter name="url" value="https://irctc.com"/>
-  <test name="Test(failed)(failed)" preserve-order="true">
+  <test name="Test(failed)" preserve-order="true">
     <classes>
-      <class name="test.PhpTravels.AppTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.PhpTravels.AppTest -->
       <class name="test.PhpTravels.SeleTest">
         <methods>
+          <include name="testDemoQA"/>
           <include name="tearDown"/>
-          <include name="testSeleTest"/>
+          <include name="teardown"/>
           <include name="beforeMethod"/>
+          <include name="setup"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- test.PhpTravels.SeleTest -->
+      <class name="test.PhpTravels.AppTest">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- test.PhpTravels.AppTest -->
     </classes>
-  </test> <!-- Test(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [Suite]] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

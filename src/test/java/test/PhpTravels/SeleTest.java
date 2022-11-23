@@ -25,8 +25,8 @@ public class SeleTest extends AppTest {
 	public void beforeTest() throws IOException {
 		System.out.println("I am in BeforeTest");		
 	}
-	@Test()
-	public void testSeleTest() throws IOException, InterruptedException {
+	@Test(timeOut = 20000)
+	public void testDemoQA() throws IOException, InterruptedException {
 		System.out.println("I am in SeleTest");
 		driver.switchTo().newWindow(WindowType.TAB);
 		driver.navigate().to("https://demoqa.com/upload-download");
