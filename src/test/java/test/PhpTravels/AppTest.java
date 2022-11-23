@@ -5,6 +5,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterSuite;
@@ -36,10 +37,12 @@ public class AppTest
 
 	@Test()
 	public void testAppTest(){
-		System.out.println("I am in AppTest");
+		System.out.println("I am in testAppTest");
 		driver.get("https://google.com");
 		}
 
+	
+	
 	@AfterSuite
 	public void teardown(){
 		System.out.println("I am in AfterSuite");

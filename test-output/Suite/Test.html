@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 18 20:47:00 IST 2022</td>
+<td>Started on:</td><td>Wed Nov 23 19:30:58 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (42 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15712 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,69 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.PhpTravels.TestNGAnnotations.test()'><b>test</b><br>Test class: test.PhpTravels.TestNGAnnotations</td>
-<td><div><pre>java.lang.AssertionError: value of i is not equal to 3 expected [2] but found [3]
-	at test.PhpTravels.TestNGAnnotations.test(TestNGAnnotations.java:40)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1839337592", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1839337592'><pre>java.lang.AssertionError: value of i is not equal to 3 expected [2] but found [3]
+<td title='test.PhpTravels.SeleTest.testIrctc()'><b>testIrctc</b><br>Test class: test.PhpTravels.SeleTest<br>Parameters: https://irctc.com</td>
+<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testIrctc() didn&apos;t finish within the time-out 4000
+	at java.base@17.0.4.1/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base@17.0.4.1/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+	at java.base@17.0.4.1/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base@17.0.4.1/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base@17.0.4.1/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base@17.0.4.1/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base@17.0.4.1/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base@17.0.4.1/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base@17.0.4.1/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:144)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at app//org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:981)
+	at app//test.PhpTravels.SeleTest.testIrctc(SeleTest.java:42)
+	at java.base@17.0.4.1/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base@17.0.4.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace250702170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace250702170'><pre>org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testIrctc() didn&apos;t finish within the time-out 4000
+	at java.base@17.0.4.1/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base@17.0.4.1/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+	at java.base@17.0.4.1/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base@17.0.4.1/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base@17.0.4.1/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base@17.0.4.1/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base@17.0.4.1/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base@17.0.4.1/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base@17.0.4.1/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:144)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at app//org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:981)
+	at app//test.PhpTravels.SeleTest.testIrctc(SeleTest.java:42)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.4.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.4.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at app//org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at app//org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base@17.0.4.1/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base@17.0.4.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>4</td>
+<td>test.PhpTravels.SeleTest@f381794</td></tr>
+<tr>
+<td title='test.PhpTravels.SeleTest.testSeleTest()'><b>testSeleTest</b><br>Test class: test.PhpTravels.SeleTest</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at test.PhpTravels.SeleTest.testSeleTest(SeleTest.java:33)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1649884294", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1649884294'><pre>java.lang.AssertionError: expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:365)
-	at test.PhpTravels.TestNGAnnotations.test(TestNGAnnotations.java:40)
+	at org.testng.Assert.assertFalse(Assert.java:58)
+	at org.testng.Assert.assertFalse(Assert.java:68)
+	at test.PhpTravels.SeleTest.testSeleTest(SeleTest.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,8 +163,26 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>test.PhpTravels.TestNGAnnotations@4f67eb2a</td></tr>
+<td>7</td>
+<td>test.PhpTravels.SeleTest@f381794</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.PhpTravels.AppTest.testAppTest()'><b>testAppTest</b><br>Test class: test.PhpTravels.AppTest</td>
+<td></td>
+<td>3</td>
+<td>test.PhpTravels.AppTest@2892dae4</td></tr>
+<tr>
+<td title='test.PhpTravels.SeleTest.testAppTest()'><b>testAppTest</b><br>Test class: test.PhpTravels.SeleTest</td>
+<td></td>
+<td>1</td>
+<td>test.PhpTravels.SeleTest@f381794</td></tr>
 </table><p>
 </body>
 </html>
