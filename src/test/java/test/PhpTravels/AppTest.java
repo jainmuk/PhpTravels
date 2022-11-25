@@ -22,8 +22,8 @@ public class AppTest
 {
 	public static WebDriver driver;
 
-
-	@BeforeSuite
+	
+	@BeforeSuite(groups="smoke")
 	public void setup() throws IOException{
 		driver = WebDriverManager.chromedriver().create();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -34,14 +34,6 @@ public class AppTest
 	public void beforeMethod() {
 		System.out.println("I am in before method");
 	}
-
-	@Test()
-	public void testAppTest(){
-		System.out.println("I am in testAppTest");
-		driver.get("https://google.com");
-		}
-
-	
 	
 	@AfterSuite
 	public void teardown(){

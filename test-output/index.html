@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.PhpTravels.SeleTest" class="method navigator-link" hash-for-method="testDemoQA">testDemoQA</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,12 +101,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.PhpTravels.AppTest" class="method navigator-link" hash-for-method="testAppTest">testAppTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.PhpTravels.LoginTest" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.PhpTravels.SeleTest" class="method navigator-link" hash-for-method="testAppTest">testAppTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.PhpTravels.SeleTest" class="method navigator-link" hash-for-method="testDemoQA">testDemoQA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.PhpTravels.SeleTest" class="method navigator-link" hash-for-method="testFlipkart">testFlipkart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -140,55 +136,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.PhpTravels.SeleTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">test.PhpTravels.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testDemoQA">
-                  </a> <!-- testDemoQA -->
-                  <span class="method-name">testDemoQA</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [false] but found [true]
-	at test.PhpTravels.SeleTest.testDemoQA(SeleTest.java:33)
-... Removed 28 stack frames<br/> java.lang.AssertionError: expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:89)
-	at org.testng.Assert.failNotEquals(Assert.java:489)
-	at org.testng.Assert.assertFalse(Assert.java:58)
-	at org.testng.Assert.assertFalse(Assert.java:68)
-	at test.PhpTravels.SeleTest.testDemoQA(SeleTest.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
-	at org.testng.TestNG.run(TestNG.java:1030)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-"</b><br>org.testng.Assert.fail(Assert.java:89)<br>org.testng.Assert.failNotEquals(Assert.java:489)<br>org.testng.Assert.assertFalse(Assert.java:58)<br>org.testng.Assert.assertFalse(Assert.java:68)<br>test.PhpTravels.SeleTest.testDemoQA(SeleTest.java:33)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:568)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:715)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
-</div> <!-- stack-trace -->
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -200,6 +162,20 @@
                   <a name="testAppTest">
                   </a> <!-- testAppTest -->
                   <span class="method-name">testAppTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDemoQA">
+                  </a> <!-- testDemoQA -->
+                  <span class="method-name">testDemoQA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlipkart">
+                  </a> <!-- testFlipkart -->
+                  <span class="method-name">testFlipkart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -208,21 +184,6 @@
                   </a> <!-- testIrctc(https://irctc.com) -->
                   <span class="method-name">testIrctc</span>
                   <span class="parameters">(https://irctc.com)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.PhpTravels.AppTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testAppTest">
-                  </a> <!-- testAppTest -->
-                  <span class="method-name">testAppTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -241,11 +202,8 @@
   &lt;test name=&quot;Test&quot; preserve-order=&quot;true&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.PhpTravels.AppTest&quot;/&gt;
-      &lt;class name=&quot;test.PhpTravels.SeleTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;exclude name=&quot;test1&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.PhpTravels.SeleTest --&gt;
+      &lt;class name=&quot;test.PhpTravels.LoginTest&quot;/&gt;
+      &lt;class name=&quot;test.PhpTravels.SeleTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -259,7 +217,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -269,6 +227,18 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testAppTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDemoQA</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -285,28 +255,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testDemoQA')
+data.setCell(0, 1, 'testFlipkart')
 data.setCell(0, 2, 'test.PhpTravels.SeleTest')
-data.setCell(0, 3, 10322);
+data.setCell(0, 3, 26110);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testIrctc')
 data.setCell(1, 2, 'test.PhpTravels.SeleTest')
-data.setCell(1, 3, 3702);
+data.setCell(1, 3, 22499);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testAppTest')
-data.setCell(2, 2, 'test.PhpTravels.AppTest')
-data.setCell(2, 3, 2987);
+data.setCell(2, 1, 'testDemoQA')
+data.setCell(2, 2, 'test.PhpTravels.SeleTest')
+data.setCell(2, 3, 12085);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testAppTest')
-data.setCell(3, 2, 'test.PhpTravels.SeleTest')
-data.setCell(3, 3, 665);
+data.setCell(3, 1, 'login')
+data.setCell(3, 2, 'test.PhpTravels.LoginTest')
+data.setCell(3, 3, 4131);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testAppTest')
+data.setCell(4, 2, 'test.PhpTravels.SeleTest')
+data.setCell(4, 3, 4100);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -321,13 +295,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">test.PhpTravels.SeleTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testFlipkart</span>
+                <span class="ignored-method-name">teardown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -348,62 +324,74 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.PhpTravels.SeleTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.PhpTravels.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.PhpTravels.SeleTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">7069 ms</span>
+                <span class="method-start">4189 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">test.PhpTravels.AppTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.PhpTravels.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">7081 ms</span>
+                <span class="method-start">4200 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testAppTest</span>
-                <span class="method-start">7081 ms</span>
+                <span class="method-name">login</span>
+                <span class="method-start">4200 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.PhpTravels.SeleTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">10075 ms</span>
+                <span class="method-start">8336 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAppTest</span>
-                <span class="method-start">10075 ms</span>
+                <span class="method-start">8336 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">10742 ms</span>
+                <span class="method-start">12438 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testDemoQA</span>
-                <span class="method-start">10743 ms</span>
+                <span class="method-start">12439 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">21083 ms</span>
+                <span class="method-start">24534 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFlipkart</span>
+                <span class="method-start">24535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">50652 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testIrctc(https://irctc.com)</span>
-                <span class="method-start">21084 ms</span>
+                <span class="method-start">50652 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24796 ms</span>
+                <span class="method-start">73152 ms</span>
               </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.PhpTravels.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">24990 ms</span>
+                <span class="method-start">73438 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

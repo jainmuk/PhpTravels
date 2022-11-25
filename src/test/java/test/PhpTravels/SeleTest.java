@@ -25,24 +25,30 @@ public class SeleTest extends AppTest {
 	public void beforeTest() throws IOException {
 		System.out.println("I am in BeforeTest");		
 	}
-	@Test(timeOut = 20000)
+	
+	@Test(groups = "smoke")
+	public void testAppTest(){
+		System.out.println("I am in testAppTest");
+		driver.get("https://google.com");
+		}
+	
+	@Test(groups = "smoke")
 	public void testDemoQA() throws IOException, InterruptedException {
 		System.out.println("I am in SeleTest");
 		driver.switchTo().newWindow(WindowType.TAB);
-		driver.navigate().to("https://demoqa.com/upload-download");
-		assertFalse(true);
+		driver.navigate().to("https://demoqa.com/upload-download");		
 		Thread.sleep(5000);		
 	}
 	
 	@Parameters({"url"})
-	@Test()
+	@Test(enabled = true)
 	public void testIrctc(String url) {
 		System.out.println("I am in testIrctc");
 		driver.switchTo().newWindow(WindowType.TAB);
 		driver.navigate().to(url);
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void testFlipkart() {
 		System.out.println("I am in testFlipkart");
 		driver.switchTo().newWindow(WindowType.TAB);

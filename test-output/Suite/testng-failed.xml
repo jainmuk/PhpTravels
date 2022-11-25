@@ -4,22 +4,11 @@
   <parameter name="url" value="https://irctc.com"/>
   <test name="Test(failed)" preserve-order="true">
     <classes>
-      <class name="test.PhpTravels.SeleTest">
+      <class name="test.PhpTravels.DataProviderTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="testSeleTest"/>
-          <include name="teardown"/>
-          <include name="beforeMethod"/>
-          <include name="setup"/>
-          <include name="beforeTest"/>
-          <include name="testIrctc" invocation-numbers="0"/>
+          <include name="myTest"/>
         </methods>
-      </class> <!-- test.PhpTravels.SeleTest -->
-      <class name="test.PhpTravels.AppTest">
-        <methods>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- test.PhpTravels.AppTest -->
+      </class> <!-- test.PhpTravels.DataProviderTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
