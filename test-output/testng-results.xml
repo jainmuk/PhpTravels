@@ -1,78 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="5" passed="5" failed="0" skipped="0">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-25T14:47:09Z" name="Suite" finished-at="2022-11-25T14:48:18Z" duration-ms="69114">
+  <suite started-at="2022-11-25T15:26:27Z" name="Suite" finished-at="2022-11-25T15:26:28Z" duration-ms="1294">
     <groups>
-      <group name="smoke">
-        <method signature="SeleTest.testAppTest()[pri:0, instance:test.PhpTravels.SeleTest@1f97cf0d]" name="testAppTest" class="test.PhpTravels.SeleTest"/>
-        <method signature="SeleTest.testDemoQA()[pri:0, instance:test.PhpTravels.SeleTest@1f97cf0d]" name="testDemoQA" class="test.PhpTravels.SeleTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-11-25T14:47:09Z" name="Test" finished-at="2022-11-25T14:48:18Z" duration-ms="69114">
-      <class name="test.PhpTravels.SeleTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.PhpTravels.SeleTest@1f97cf0d]" started-at="2022-11-25T20:17:09Z" name="beforeTest" finished-at="2022-11-25T20:17:09Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.SeleTest@1f97cf0d]" started-at="2022-11-25T20:17:13Z" name="beforeMethod" finished-at="2022-11-25T20:17:13Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testAppTest()[pri:0, instance:test.PhpTravels.SeleTest@1f97cf0d]" started-at="2022-11-25T20:17:13Z" name="testAppTest" finished-at="2022-11-25T20:17:17Z" duration-ms="4100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAppTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.SeleTest@1f97cf0d]" started-at="2022-11-25T20:17:17Z" name="beforeMethod" finished-at="2022-11-25T20:17:17Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testDemoQA()[pri:0, instance:test.PhpTravels.SeleTest@1f97cf0d]" started-at="2022-11-25T20:17:17Z" name="testDemoQA" finished-at="2022-11-25T20:17:29Z" duration-ms="12085" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDemoQA -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.SeleTest@1f97cf0d]" started-at="2022-11-25T20:17:29Z" name="beforeMethod" finished-at="2022-11-25T20:17:29Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testFlipkart()[pri:0, instance:test.PhpTravels.SeleTest@1f97cf0d]" started-at="2022-11-25T20:17:29Z" name="testFlipkart" finished-at="2022-11-25T20:17:55Z" duration-ms="26110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFlipkart -->
-        <test-method signature="testIrctc(java.lang.String)[pri:0, instance:test.PhpTravels.SeleTest@1f97cf0d]" started-at="2022-11-25T20:17:55Z" name="testIrctc" finished-at="2022-11-25T20:18:18Z" duration-ms="22499" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://irctc.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIrctc -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.SeleTest@1f97cf0d]" started-at="2022-11-25T20:17:55Z" name="beforeMethod" finished-at="2022-11-25T20:17:55Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.PhpTravels.SeleTest@1f97cf0d]" started-at="2022-11-25T20:18:18Z" name="tearDown" finished-at="2022-11-25T20:18:18Z" duration-ms="148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- test.PhpTravels.SeleTest -->
+    <test started-at="2022-11-25T15:26:27Z" name="Test" finished-at="2022-11-25T15:26:28Z" duration-ms="1294">
       <class name="test.PhpTravels.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.PhpTravels.LoginTest@40cb8df7]" started-at="2022-11-25T20:17:05Z" name="setup" finished-at="2022-11-25T20:17:09Z" duration-ms="4186" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.PhpTravels.LoginTest@37858383]" started-at="2022-11-25T20:56:22Z" name="setup" finished-at="2022-11-25T20:56:27Z" duration-ms="4417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:test.PhpTravels.LoginTest@40cb8df7]" started-at="2022-11-25T20:17:09Z" name="login" finished-at="2022-11-25T20:17:13Z" duration-ms="4131" status="PASS">
+        <test-method signature="login()[pri:0, instance:test.PhpTravels.LoginTest@37858383]" started-at="2022-11-25T20:56:27Z" name="login" finished-at="2022-11-25T20:56:28Z" duration-ms="1276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.LoginTest@40cb8df7]" started-at="2022-11-25T20:17:09Z" name="beforeMethod" finished-at="2022-11-25T20:17:09Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.LoginTest@37858383]" started-at="2022-11-25T20:56:27Z" name="beforeMethod" finished-at="2022-11-25T20:56:27Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.PhpTravels.LoginTest@40cb8df7]" started-at="2022-11-25T20:18:18Z" name="teardown" finished-at="2022-11-25T20:18:19Z" duration-ms="1356" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.PhpTravels.LoginTest@37858383]" started-at="2022-11-25T20:56:28Z" name="teardown" finished-at="2022-11-25T20:56:29Z" duration-ms="960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
