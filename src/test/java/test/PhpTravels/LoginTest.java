@@ -23,12 +23,23 @@ import objects.Login;
 
 public class LoginTest extends AppTest {
 
-	public String Filename ="logindata.xlsx";
+	public static String Filename ="logindata.xlsx";
 	Login login ;
 	List<Login> listOfLoginCred = new ArrayList<Login>();
 	
 	public LoginTest(String Filename) {
 		this.Filename = Filename;
+	}
+	
+	@Test(groups = "test")
+	public void test() throws IOException {
+		FileInputStream fis = new FileInputStream(new File("logindata.xlsx"));			
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		XSSFSheet sheet = wb.getSheetAt(0);
+		Row r = sheet.getRow(0);
+		Cell c = r.getCell(0);
+		System.out.println(c);
+		wb.close();
 	}
 
 	public void readListOfDataFromExcel() {
