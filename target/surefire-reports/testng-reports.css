@@ -1,9 +1,9 @@
 body {
-    margin: 0px 0px 5px 5px;
+    margin: 0 0 5px 5px;
 }
 
 ul {
-    margin: 0px;
+    margin: 0;
 }
 
 li {
@@ -23,35 +23,37 @@ a:hover {
 }
 
 .wrapper {
-    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 400px;
+    right: 0;
+    overflow: auto;
 }
 
 .navigator-root {
-    margin-top: 60px;
-    float: left;
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
     width: 400px;
-    height: 100%;
     overflow-y: auto;
 }
 
-.main-panel-root {
-    margin-top: 60px;
-}
-
 .suite {
-    margin: 0px 10px 10px 0px;
+    margin: 0 10px 10px 0;
     background-color: #fff8dc;
 }
 
 .suite-name {
     padding-left: 10px;
     font-size: 25px;
-    font-family: Times;
+    font-family: Times, sans-serif;
 }
 
 .main-panel-header {
     padding: 5px;
-    background-color: #9FB4D9; //afeeee;
+    background-color: #9FB4D9; /*afeeee*/;
     font-family: monospace;
     font-size: 18px;
 }
@@ -59,7 +61,7 @@ a:hover {
 .main-panel-content {
     padding: 5px;
     margin-bottom: 10px;
-    background-color: #DEE8FC; //d0ffff;
+    background-color: #DEE8FC; /*d0ffff*/;
 }
 
 .rounded-window {
@@ -73,6 +75,7 @@ a:hover {
     border-top-left-radius: 10px 10px;
     border-style: solid;
     border-width: 1px;
+    overflow: auto;
 }
 
 .light-rounded-window-top {
@@ -82,9 +85,10 @@ a:hover {
 
 .rounded-window-bottom {
     border-style: solid;
-    border-width: 0px 1px 1px 1px;
+    border-width: 0 1px 1px 1px;
     border-bottom-right-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
+    overflow: auto;
 }
 
 .method-name {
@@ -94,8 +98,8 @@ a:hover {
 
 .method-content {
     border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    margin-bottom: 10;
+    border-width: 0 0 1px 0;
+    margin-bottom: 10px;
     padding-bottom: 5px;
     width: 80%;
 }
@@ -109,7 +113,8 @@ a:hover {
     white-space: pre;
     font-family: monospace;
     font-size: 12px;
-    margin-top: 0px;
+    font-weight: bold;
+    margin-top: 0;
     margin-left: 20px;
 }
 
@@ -130,8 +135,8 @@ a:hover {
     margin-top: 10px;
     width: 80%;
     border-style: solid;
-    border-width: 1px 0px 0px 0px;
-    font-family: Times;
+    border-width: 1px 0 0 0;
+    font-family: Times, sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
@@ -141,15 +146,33 @@ a:hover {
 }
 
 .top-banner-root {
-    position: fixed;
-    width: 100%;
-    padding: 5px;
-    margin: 0px 0px 5px 0px;
+    position: absolute;
+    top: 0;
     height: 45px;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    margin: 0 0 5px 0;
     background-color: #0066ff;
-    font-family: Times;
+    font-family: Times, sans-serif;
     color: #fff;
     text-align: center;
+}
+.button{
+    position: absolute;
+    margin-left:500px;
+    margin-top:8px;
+    background-color: white;
+    color:#0066ff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight:bold;
+    border-color:#0066ff ;
+    border-radius:25px;
+    cursor: pointer;
+    height:30px;
+    width:150px;
+    outline:none;
+
 }
 
 .top-banner-title-font {
@@ -157,20 +180,20 @@ a:hover {
 }
 
 .test-name {
-    font-family: 'Lucida Grande';
+    font-family: 'Lucida Grande', sans-serif;
     font-size: 16px;
 }
 
 .suite-icon {
     padding: 5px;
     float: right;
-    height: 20;
+    height: 20px;
 }
 
 .test-group {
     font: 20px 'Lucida Grande';
     margin: 5px 5px 10px 5px;
-    border-width: 0px 0px 1px 0px;
+    border-width: 0 0 1px 0;
     border-style: solid;
     padding: 5px;
 }
@@ -195,10 +218,10 @@ table.google-visualization-table-table {
 
 .reporter-method-output-div {
     padding: 5px;
-    margin: 0px 0px 5px 20px;
+    margin: 0 0 5px 20px;
     font-size: 12px;
     font-family: monospace;
-    border-width: 0px 0px 0px 1px;
+    border-width: 0 0 0 1px;
     border-style: solid;
 }
 
@@ -209,10 +232,10 @@ table.google-visualization-table-table {
 
 .ignored-methods-div {
     padding: 5px;
-    margin: 0px 0px 5px 20px;
+    margin: 0 0 5px 20px;
     font-size: 12px;
     font-family: monospace;
-    border-width: 0px 0px 0px 1px;
+    border-width: 0 0 0 1px;
     border-style: solid;
 }
 
@@ -220,7 +243,7 @@ table.google-visualization-table-table {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
     border-style: solid;
-    border-width: 0px 0px 0px 10px;
+    border-width: 0 0 0 10px;
     border-color: #f00;
 }
 
@@ -228,7 +251,7 @@ table.google-visualization-table-table {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
     border-style: solid;
-    border-width: 0px 0px 0px 10px;
+    border-width: 0 0 0 10px;
     border-color: #edc600;
 }
 
@@ -236,7 +259,7 @@ table.google-visualization-table-table {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
     border-style: solid;
-    border-width: 0px 0px 0px 10px;
+    border-width: 0 0 0 10px;
     border-color: #19f52d;
 }
 
@@ -270,9 +293,9 @@ table.google-visualization-table-table {
 }
 
 .chronological-class {
-    background-color: #0ccff;
+    background-color: skyblue;
     border-style: solid;
-    border-width: 0px 0px 1px 1px;
+    border-width: 0 0 1px 1px;
 }
 
 .method-start {
@@ -280,7 +303,7 @@ table.google-visualization-table-table {
 }
 
 .chronological-class-name {
-    padding: 0px 0px 0px 5px;
+    padding: 0 0 0 5px;
     color: #008;
 }
 
@@ -291,7 +314,7 @@ table.google-visualization-table-table {
 
 .navigator-suite-header {
     font-size: 22px;
-    margin: 0px 10px 5px 0px;
+    margin: 0 10px 5px 0;
     background-color: #deb887;
     text-align: center;
 }
@@ -300,3 +323,4 @@ table.google-visualization-table-table {
     padding: 5px;
     float: right;
 }
+/*retro Theme*/

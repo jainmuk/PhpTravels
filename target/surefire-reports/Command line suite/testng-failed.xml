@@ -5,13 +5,27 @@
     <classes>
       <class name="test.PhpTravels.AppTest">
         <methods>
+          <include name="teardown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- test.PhpTravels.AppTest -->
+      <class name="test.PhpTravels.DataProviderTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="myTest" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- test.PhpTravels.DataProviderTest -->
+      <class name="test.PhpTravels.LoginTest">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- test.PhpTravels.LoginTest -->
       <class name="test.PhpTravels.SeleTest">
         <methods>
           <include name="tearDown"/>
-          <include name="testSeleTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="testIrctc"/>
         </methods>
       </class> <!-- test.PhpTravels.SeleTest -->
     </classes>

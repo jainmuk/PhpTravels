@@ -1,4 +1,4 @@
-package test.PhpTravels;
+package objects;
 
 /**
  * Hello world!

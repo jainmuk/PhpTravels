@@ -19,6 +19,8 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
 
+import objects.Login;
+
 public class LoginTest extends AppTest {
 
 	public String Filename ="logindata.xlsx";

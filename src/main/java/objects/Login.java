@@ -1,4 +1,4 @@
-package test.PhpTravels;
+package objects;
 
 public class Login {
 
