@@ -20,18 +20,18 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
 
 import objects.Login;
+import utilityMethods.ExcelFileHandling;
 
 public class LoginTest extends AppTest {
 
 	public static String Filename ="logindata.xlsx";
-	Login login ;
-	List<Login> listOfLoginCred = new ArrayList<Login>();
+	
 	
 	public LoginTest(String Filename) {
 		this.Filename = Filename;
 	}
 	
-	@Test(groups = "test")
+//	@Test(groups = "test")
 	public void test() throws IOException {
 		FileInputStream fis = new FileInputStream(new File("logindata.xlsx"));			
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
@@ -42,26 +42,7 @@ public class LoginTest extends AppTest {
 		wb.close();
 	}
 
-	public void readListOfDataFromExcel() {
-		File file = new File("logindata.xlsx"); //creating a new file instance
-		try {
-			FileInputStream fis = new FileInputStream(file);//obtaining bytes from the file 			
-			XSSFWorkbook wb = new XSSFWorkbook(fis);//creating Workbook instance that refers to .xlsx file  
-			XSSFSheet sheet = wb.getSheetAt(0);  //creating a Sheet object to retrieve object  
-			Iterator<Row> itr = sheet.iterator(); //iterating over excel file rows
-			itr.next();
-			while (itr.hasNext()) {
-				Row row = itr.next();  //fetching row data
-				login = new Login(String.valueOf(row.getCell(0)),String.valueOf(row.getCell(1)));				
-				listOfLoginCred.add(login);
-			}
-			wb.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+	
 	
 	public String readParameterValueFromExcel(String parameterName) {
 		File file = new File("demodata.xlsx"); //creating a new file instance
@@ -103,13 +84,13 @@ public class LoginTest extends AppTest {
 
 	@Test
 	public void login() {	
-		readListOfDataFromExcel();
+		List<Login> listOfLoginCred = ExcelFileHandling.readListOfDataFromExcel();
 		int listCount = listOfLoginCred.size();
 		for(int i=0;i<listCount;i++) {
 			System.out.println(listOfLoginCred.get(i).toString());
 		}
 		
-		String lastName = readParameterValueFromExcel("lastName");
-		System.out.println(lastName);
+//		String lastName = readParameterValueFromExcel("lastName");
+//		System.out.println(lastName);
 	}
 }
