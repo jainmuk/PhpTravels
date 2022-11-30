@@ -6,7 +6,7 @@
 		
 		<classes>
 			<class name="test.PhpTravels.AppTest" />
-			<class name="test.PhpTravels.LoginTest" />
+			<class name="test.PhpTravels.SeleTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
