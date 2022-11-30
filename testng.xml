@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-   	  <class name="test.PhpTravels.LoginTest" />	
+   	  <class name="test.PhpTravels.DataProviderTest" />	
      
     </classes>
   </test> <!-- Test -->

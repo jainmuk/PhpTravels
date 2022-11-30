@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-27T14:41:38 IST" name="Suite" finished-at="2022-11-27T14:42:16 IST" duration-ms="38088">
+  <suite started-at="2022-11-29T22:25:01 IST" name="Suite" finished-at="2022-11-29T22:25:49 IST" duration-ms="48049">
     <groups>
     </groups>
-    <test started-at="2022-11-27T14:41:38 IST" name="Test" finished-at="2022-11-27T14:42:16 IST" duration-ms="38088">
+    <test started-at="2022-11-29T22:25:01 IST" name="Test" finished-at="2022-11-29T22:25:49 IST" duration-ms="48049">
       <class name="test.PhpTravels.DataProviderTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.PhpTravels.DataProviderTest@4944252c]" started-at="2022-11-27T14:41:30 IST" name="setup" finished-at="2022-11-27T14:41:38 IST" duration-ms="7841" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.PhpTravels.DataProviderTest@2cd2a21f]" started-at="2022-11-29T22:24:36 IST" name="setup" finished-at="2022-11-29T22:25:01 IST" duration-ms="25123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.DataProviderTest@4944252c]" started-at="2022-11-27T14:41:41 IST" name="beforeMethod" finished-at="2022-11-27T14:41:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.DataProviderTest@2cd2a21f]" started-at="2022-11-29T22:25:13 IST" name="beforeMethod" finished-at="2022-11-29T22:25:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="myTest(java.lang.String,java.lang.String)[pri:0, instance:test.PhpTravels.DataProviderTest@4944252c]" started-at="2022-11-27T14:41:41 IST" name="myTest" data-provider="data-provider" finished-at="2022-11-27T14:41:53 IST" duration-ms="11825" status="PASS">
+        <test-method signature="myTest(java.lang.String,java.lang.String)[pri:0, instance:test.PhpTravels.DataProviderTest@2cd2a21f]" started-at="2022-11-29T22:25:13 IST" name="myTest" data-provider="data-provider" finished-at="2022-11-29T22:25:26 IST" duration-ms="13270" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,11 +31,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.DataProviderTest@4944252c]" started-at="2022-11-27T14:41:53 IST" name="beforeMethod" finished-at="2022-11-27T14:41:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.DataProviderTest@2cd2a21f]" started-at="2022-11-29T22:25:26 IST" name="beforeMethod" finished-at="2022-11-29T22:25:26 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="myTest(java.lang.String,java.lang.String)[pri:0, instance:test.PhpTravels.DataProviderTest@4944252c]" started-at="2022-11-27T14:41:53 IST" name="myTest" data-provider="data-provider" finished-at="2022-11-27T14:42:01 IST" duration-ms="8715" status="PASS">
+        <test-method signature="myTest(java.lang.String,java.lang.String)[pri:0, instance:test.PhpTravels.DataProviderTest@2cd2a21f]" started-at="2022-11-29T22:25:26 IST" name="myTest" data-provider="data-provider" finished-at="2022-11-29T22:25:35 IST" duration-ms="8573" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,11 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.DataProviderTest@4944252c]" started-at="2022-11-27T14:42:01 IST" name="beforeMethod" finished-at="2022-11-27T14:42:01 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="myTest(java.lang.String,java.lang.String)[pri:0, instance:test.PhpTravels.DataProviderTest@4944252c]" started-at="2022-11-27T14:42:01 IST" name="myTest" data-provider="data-provider" finished-at="2022-11-27T14:42:16 IST" duration-ms="14604" status="FAIL">
+        <test-method signature="myTest(java.lang.String,java.lang.String)[pri:0, instance:test.PhpTravels.DataProviderTest@2cd2a21f]" started-at="2022-11-29T22:25:35 IST" name="myTest" data-provider="data-provider" finished-at="2022-11-29T22:25:49 IST" duration-ms="14154" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -71,25 +67,25 @@
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h3[text()='Login Successfully']"}
-  (Session info: chrome=107.0.5304.107)
+  (Session info: chrome=107.0.5304.108)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.5.3', revision: '4b786a1e430'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2b77139ce03ebafee34e0c715ddb8c34, findElement {using=xpath, value=//h3[text()='Login Successfully']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\MUKULS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49587/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b77139ce03ebafee34e0c715ddb8c34]]>
+Command: [f79a4237d8d9f48c9c43234f4d82097f, findElement {using=xpath, value=//h3[text()='Login Successfully']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\MUKULS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64113}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64113/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f79a4237d8d9f48c9c43234f4d82097f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h3[text()='Login Successfully']"}
-  (Session info: chrome=107.0.5304.107)
+  (Session info: chrome=107.0.5304.108)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.5.3', revision: '4b786a1e430'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2b77139ce03ebafee34e0c715ddb8c34, findElement {using=xpath, value=//h3[text()='Login Successfully']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\MUKULS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49587/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b77139ce03ebafee34e0c715ddb8c34
+Command: [f79a4237d8d9f48c9c43234f4d82097f, findElement {using=xpath, value=//h3[text()='Login Successfully']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\MUKULS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64113}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64113/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f79a4237d8d9f48c9c43234f4d82097f
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -144,7 +140,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.PhpTravels.DataProviderTest@4944252c]" started-at="2022-11-27T14:42:16 IST" name="teardown" finished-at="2022-11-27T14:42:17 IST" duration-ms="805" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.PhpTravels.DataProviderTest@2cd2a21f]" started-at="2022-11-29T22:25:35 IST" name="beforeMethod" finished-at="2022-11-29T22:25:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.PhpTravels.DataProviderTest@2cd2a21f]" started-at="2022-11-29T22:25:49 IST" name="teardown" finished-at="2022-11-29T22:25:51 IST" duration-ms="1348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
