@@ -3,22 +3,15 @@ package test.PhpTravels;
 import static org.testng.Assert.assertFalse;
 
 import java.io.IOException;
-import java.time.Duration;
 
-import org.testng.annotations.Parameters;  
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import Base.AppTest;
+import org.testng.annotations.Parameters;
 import org.openqa.selenium.WindowType;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.beust.jcommander.Parameter;
-
-public class SeleTest extends AppTest {
+public class  SeleTest extends AppTest {
 
 	//This test is to test upload and download on demoQA
 	@BeforeTest
@@ -36,7 +29,7 @@ public class SeleTest extends AppTest {
 	public void testDemoQA() throws IOException, InterruptedException {
 		System.out.println("I am in SeleTest");
 		driver.switchTo().newWindow(WindowType.TAB);
-		driver.navigate().to("https://demoqa.com/upload-download");		
+		driver.navigate().to("https://demoqa.com/upload-download");
 		Thread.sleep(5000);		
 	}
 	
@@ -52,7 +45,7 @@ public class SeleTest extends AppTest {
 	public void testFlipkart() {
 		System.out.println("I am in testFlipkart");
 		driver.switchTo().newWindow(WindowType.TAB);
-		driver.navigate().to("https://flipkart.com");
+		driver.navigate().to("https://rahulshettyacademy.com/seleniumPractise/#/");
 	}
 	
 	@AfterTest

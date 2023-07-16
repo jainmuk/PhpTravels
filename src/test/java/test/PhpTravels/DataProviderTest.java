@@ -19,7 +19,7 @@ public class DataProviderTest {
 	@DataProvider(name = "data-provider")
 	public Object[][] dpMethod() {
 
-		File file = new File("L:\\gitProject\\php\\PhpTravels\\logindata.xlsx"); // creating a new file instance
+		File file = new File(System.getProperty("user.dir")+"//logindata.xlsx"); // creating a new file instance
 		try {
 			FileInputStream fis = new FileInputStream(file);// obtaining bytes from the file
 
@@ -44,6 +44,7 @@ public class DataProviderTest {
 
 	@Test(dataProvider = "data-provider")
 	public void myTest(String userId, String pwd) {
+
 		System.out.println("userID : " + userId + " password: " + pwd);
 	}
 
